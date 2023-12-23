@@ -1,0 +1,163 @@
+body{
+    margin: 0;
+}
+header{
+    background-color:#1D2254;
+    height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    
+}
+header>div{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+}
+a>.user{
+    width: 30px;
+    padding-right: 30px;
+}
+header>div>a{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: white;
+    font-size: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: 300;
+    text-decoration: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+header>div>a:hover{
+    -webkit-transition: 0.15s;
+    -o-transition: 0.15s;
+    transition: 0.15s;
+    color: black;
+}
+.out{
+    margin-bottom: 40px;
+}
+header>img{
+    margin:20px;
+    background-repeat: no-repeat;
+}
+.container{
+    display: flex;
+    gap: 10px;
+}
+.out{
+    margin-left: 20px;
+}
+.text{
+    display: flex;
+    gap: 10px;
+}
+.text>img{
+    width:400px;
+    height: 206px;
+}
+footer{
+    background-color: #1D2254;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+footer>a>img{
+    width: 100px;
+    height: 40px;
+}
+footer>a{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+footer>a:hover{
+    color: black;
+}
+.con{
+    display: flex;
+}
+.con>p{
+    margin-left: 10px;
+    color: white;
+}
+.con>img{
+    width: 24px;
+    height: 40px;
+}
+footer>div>img{
+    width: 24px;
+    height: 40px;
+}
+h1{
+    margin: 40px 0 20px 20px;
+}
+.side{
+    display: flex;
+}
+.text{
+    display:flex;
+}
+.image{
+    display: flex;
+}
+
+footer>div{
+    display: flex;
+}
+footer>div>p{
+    color: white;
+    font-size: 18px;
+}
+.foot{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+.foot>a{
+    display: flex;
+    color: white;
+    font-size: 15px;
+    align-items: center;
+    text-decoration: none;
+}
+.foot>p{
+    color: white;
+    font-size: 12px;
+}
+@media (width<=425px){
+    header>img{
+        width: 60px;
+        display: flex;
+        align-items: center;
+    }
+    header>div{
+        flex-direction: column;
+        align-items: center;
+    }
+    header>div>a{
+        margin: 0;
+        font-size: 12px;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+    }
+}
