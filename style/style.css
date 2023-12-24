@@ -7,7 +7,9 @@ header{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     
 }
 header>div{
@@ -18,6 +20,7 @@ header>div{
         -ms-flex-align: center;
             align-items: center;
     gap: 30px;
+    justify-content: center;
 }
 a>.user{
     width: 30px;
@@ -57,6 +60,9 @@ main>img{
     margin: 0 10px 0 20px;
     width: 400px;
     height: 200px;
+}
+.school>p{
+    margin-left: 20px;
 }
 footer{
     background-color: #1D2254;
@@ -119,6 +125,9 @@ h1{
 main{
     margin-bottom: 60px;
 }
+.school>img{
+    margin-right:20px;
+}
 main>div{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -168,25 +177,49 @@ footer>div>p{
 @media(width<=425px){
     header>img{
         width: 60px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     header>div{
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     header>div>a{
         margin: 0;
         font-size: 12px;
     }
     .image{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .school{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     footer{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
-
+    .image>p{
+        margin-left: 20px;
+    }
+    .school>img{
+        margin-left: 20px;
+        width: auto;
+    }
 }

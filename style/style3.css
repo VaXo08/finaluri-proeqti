@@ -7,16 +7,17 @@ header{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     
 }
 header>div{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
     gap: 30px;
 }
 a>.user{
@@ -52,13 +53,20 @@ header>img{
     background-repeat: no-repeat;
 }
 .container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 10px;
+}
+.text>p{
+    margin-left: 20px ;
 }
 .out{
     margin-left: 20px;
 }
 .text{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 10px;
 }
@@ -68,9 +76,13 @@ header>img{
 }
 footer{
     background-color: #1D2254;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 50px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 footer>a>img{
     width: 100px;
@@ -85,6 +97,8 @@ footer>a:hover{
     color: black;
 }
 .con{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .con>p{
@@ -103,16 +117,24 @@ h1{
     margin: 40px 0 20px 20px;
 }
 .side{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .text{
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
 }
 .image{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 footer>div{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 footer>div>p{
@@ -120,15 +142,24 @@ footer>div>p{
     font-size: 18px;
 }
 .foot{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 9px;
 }
 .foot>a{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     color: white;
     font-size: 15px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-decoration: none;
 }
 .foot>p{
@@ -138,26 +169,57 @@ footer>div>p{
 @media (width<=425px){
     header>img{
         width: 60px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     header>div{
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     header>div>a{
         margin: 0;
         font-size: 12px;
     }
     footer{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .out{
+        width: 350px;
+    }
+    .container>p{
+        margin-left: 20px;
     }
     .container{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .text{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .text>img{
+        width: 370px;
     }
 }

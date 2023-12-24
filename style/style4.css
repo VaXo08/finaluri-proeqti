@@ -7,7 +7,9 @@ header{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     
 }
 header>div{
@@ -17,6 +19,8 @@ header>div{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-pack: center;
+     justify-content: center;
     gap: 30px;
 }
 a>.user{
@@ -51,9 +55,13 @@ header>img{
 }
 footer{
     background-color: #1D2254;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 50px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 footer>a>img{
     width: 100px;
@@ -68,18 +76,20 @@ footer>a:hover{
     color: black;
 }
 .contain{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 10px;
-    margin-bottom: 20px;
+    margin: 0 0 20px 20px;
 }
-.contain>img{
-    margin-left: 20px;
-}
+
 a>.user{
     width: 30px;
     padding-right: 30px;
 }
 .con{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .con>p{
@@ -98,21 +108,34 @@ h1{
     margin:20px;
 }
 .side{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .text{
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
 }
 .image{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 main{
     margin-bottom: 60px;
 }
 main>div{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
+article>div>p{
+    margin-left: 20px;
+}
 footer>div{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 footer>div>p{
@@ -120,15 +143,24 @@ footer>div>p{
     font-size: 18px;
 }
 .foot{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 9px;
 }
 .foot>a{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     color: white;
     font-size: 15px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-decoration: none;
 }
 .foot>p{
@@ -137,6 +169,8 @@ footer>div>p{
 }
 
 .photos{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap:40px;
 }
@@ -153,18 +187,64 @@ main>.photos>img{
 @media (width<=425px){
     header>img{
         width: 60px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     header>div{
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     header>div>a{
         margin: 0;
         font-size: 12px;
     }
     footer{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .bath{
+        margin: 0;
+    }
+    .first{
+        margin: 0;
+    }
+    .photos{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .images{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 30px;
+    }
+    .contain{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 }
