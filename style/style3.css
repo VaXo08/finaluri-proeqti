@@ -184,6 +184,7 @@ footer>div>p{
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
+                gap: 20px;
     }
     header>div>a{
         margin: 0;
