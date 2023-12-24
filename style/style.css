@@ -58,7 +58,7 @@ main>img{
 }
 .n9{
     margin: 0 10px 0 20px;
-    width: 400px;
+    width: 350px;
     height: 200px;
 }
 .school>p{
@@ -215,9 +215,6 @@ footer>div>p{
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-    }
-    .n9{
-        width: 350px;
     }
     .image>p{
         margin-left: 20px;

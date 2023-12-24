@@ -62,6 +62,7 @@ header>img{
     margin-left: 20px ;
 }
 .out{
+    width: 340px;
     margin-left: 20px;
 }
 .text{
@@ -195,9 +196,6 @@ footer>div>p{
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-    }
-    .out{
-        width: 350px;
     }
     .container>p{
         margin-left: 20px;
