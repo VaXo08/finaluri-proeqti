@@ -116,7 +116,7 @@ body{
  }
  .side>li{
     color: #585965;
- 
+    font-size: 15px;
  }
  footer{
      background-color: white;
